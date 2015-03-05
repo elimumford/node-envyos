@@ -1,4 +1,7 @@
-﻿describe("Envyos win32", function() {
+﻿/*global describe, it, before, beforeEach, after, afterEach */
+'use strict';
+
+describe("Envyos win32", function() {
   var envyos = require('../lib/win32');
   
   it("works", function() {
