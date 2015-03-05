@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="index.js" />
+    <Compile Include="lib\base.js" />
     <Compile Include="lib\linux.js" />
     <Compile Include="lib\win32.js" />
     <Compile Include="test\win32-tests.js">
