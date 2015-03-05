@@ -1,0 +1,14 @@
+{
+  "name": "node-envyos",
+  "version": "0.1.0",
+  "description": "node-envyos",
+  "main": "app.js",
+  "author": {
+    "name": "Eli Mumford",
+    "email": "elimumford@gmail.com"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.1.0"
+  }
+}
