@@ -1,11 +1,18 @@
 ﻿/*global describe, it, before, beforeEach, after, afterEach */
 'use strict';
 
+var envyos = require('../lib/win32');
+var expect = require('expect.js');
+
 describe("Envyos win32", function() {
-  var envyos = require('../lib/win32');
   
-  it("works", function() {
+  it("processed object has same number of keys as original", function() {
     var prc_env = envyos(process.env);
+    
+    var ekeys = Object.keys(process.env);
+    var pkeys = Object.keys(prc_env);
+    
+    expect(ekeys.length).to.equal(pkeys.length);
   });
   
   it('handles case miss match', function() {
@@ -18,7 +25,7 @@ describe("Envyos win32", function() {
     
     var faked = envyos(fakeEnv);
   });
-
+  
   it('handles circular refs', function() {
     var fakeEnv = {
       "SOME_KEY": "TEST-VALUE",
