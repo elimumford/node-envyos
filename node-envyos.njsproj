@@ -34,6 +34,12 @@
     <Compile Include="lib\base.js" />
     <Compile Include="lib\linux.js" />
     <Compile Include="lib\win32.js" />
+    <Compile Include="test\linux-tests.js">
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
+    <Compile Include="test\tests.js">
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
     <Compile Include="test\win32-tests.js">
       <TestFramework>Mocha</TestFramework>
     </Compile>

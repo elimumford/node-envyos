@@ -7,8 +7,15 @@
     "name": "Eli Mumford",
     "email": "elimumford@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elimumford/node-envyos"
+  },
   "devDependencies": {
     "expect.js": "^0.3.1",
     "mocha": "^2.1.0"
+  },
+  "scripts": { 
+    "test": "mocha -R spec"
   }
 }
