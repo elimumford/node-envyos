@@ -1,7 +1,7 @@
 ﻿/*global describe, it, before, beforeEach, after, afterEach */
 'use strict';
 
-var underTest = require('../lib/win32');
+var underTest = require('../lib/win32.js');
 var expect = require('expect.js');
 
 describe("Envyos win32", function() {

@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-var underTest = require('../lib/linux');
+var underTest = require('../lib/linux.js');
 var expect = require('expect.js');
 
 describe("Envyos linux", function() {
