@@ -1,6 +1,6 @@
 {
   "name": "node-envyos",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "node-envyos",
   "main": "index.js",
   "author": {
@@ -15,7 +15,7 @@
     "expect.js": "^0.3.1",
     "mocha": "^2.1.0"
   },
-  "scripts": { 
+  "scripts": {
     "test": "mocha -R spec"
   }
 }
