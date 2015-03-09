@@ -32,7 +32,10 @@
   <ItemGroup>
     <Compile Include="index.js" />
     <Compile Include="lib\base.js" />
+    <Compile Include="lib\darwin.js" />
+    <Compile Include="lib\freebsd.js" />
     <Compile Include="lib\linux.js" />
+    <Compile Include="lib\sunos.js" />
     <Compile Include="lib\win32.js" />
     <Compile Include="test\linux-tests.js">
       <TestFramework>Mocha</TestFramework>
