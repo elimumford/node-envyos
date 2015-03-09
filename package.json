@@ -2,7 +2,7 @@
   "name": "node-envyos",
   "version": "0.1.0",
   "description": "node-envyos",
-  "main": "app.js",
+  "main": "index.js",
   "author": {
     "name": "Eli Mumford",
     "email": "elimumford@gmail.com"
