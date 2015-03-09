@@ -31,8 +31,8 @@ describe("Envyos linux", function() {
     expect(processed_linux_env).to.have.key('CASE_KEY');
     expect(processed_linux_env).to.have.key('MISS_CASE_KEY');
     
-    expect(processed_linux_env['NEXT_KEY']).to.contain(processed_linux_env['SOME_KEY']);
-    expect(processed_linux_env['MISS_CASE_KEY']).to.contain('$case_KEY');
+    expect(processed_linux_env.NEXT_KEY).to.contain(processed_linux_env.SOME_KEY);
+    expect(processed_linux_env.MISS_CASE_KEY).to.contain('$case_KEY');
 
   });
   
@@ -52,11 +52,11 @@ describe("Envyos linux", function() {
     expect(processed_linux_env).to.have.key('CIRCULAR_KEY');
     expect(processed_linux_env).to.have.key('MISSING_KEY');
     
-    expect(processed_linux_env['NEXT_KEY']).to.contain(processed_linux_env['SOME_KEY']);
+    expect(processed_linux_env.NEXT_KEY).to.contain(processed_linux_env.SOME_KEY);
     
-    expect(processed_linux_env['CIRCULAR_KEY']).to.contain('$CIRCULAR_KEY');
+    expect(processed_linux_env.CIRCULAR_KEY).to.contain('$CIRCULAR_KEY');
         
-    expect(processed_linux_env['MISSING_KEY']).to.contain('$case_KEY');
+    expect(processed_linux_env.MISSING_KEY).to.contain('$case_KEY');
   });
 
 });

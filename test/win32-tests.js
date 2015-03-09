@@ -1,5 +1,4 @@
-﻿/*global describe, it, before, beforeEach, after, afterEach */
-'use strict';
+﻿'use strict';
 
 var underTest = require('../lib/win32.js');
 var expect = require('expect.js');
@@ -32,8 +31,8 @@ describe("Envyos win32", function() {
     expect(processed_win32_env).to.have.key('CASE_KEY');
     expect(processed_win32_env).to.have.key('MISS_CASE_KEY');
     
-    expect(processed_win32_env['NEXT_KEY']).to.contain(processed_win32_env['SOME_KEY']);
-    expect(processed_win32_env['MISS_CASE_KEY']).to.contain(processed_win32_env['CASE_KEY']);
+    expect(processed_win32_env.NEXT_KEY).to.contain(processed_win32_env.SOME_KEY);
+    expect(processed_win32_env.MISS_CASE_KEY).to.contain(processed_win32_env.CASE_KEY);
 
   });
   
@@ -53,11 +52,11 @@ describe("Envyos win32", function() {
     expect(processed_win32_env).to.have.key('CIRCULAR_KEY');
     expect(processed_win32_env).to.have.key('MISSING_KEY');
     
-    expect(processed_win32_env['NEXT_KEY']).to.contain(processed_win32_env['SOME_KEY']);
+    expect(processed_win32_env.NEXT_KEY).to.contain(processed_win32_env.SOME_KEY);
     
-    expect(processed_win32_env['CIRCULAR_KEY']).to.contain('%CIRCULAR_KEY%');
+    expect(processed_win32_env.CIRCULAR_KEY).to.contain('%CIRCULAR_KEY%');
         
-    expect(processed_win32_env['MISSING_KEY']).to.contain('%case_KEY%');
+    expect(processed_win32_env.MISSING_KEY).to.contain('%case_KEY%');
   });
 
 });
