@@ -2,6 +2,7 @@
   "name": "node-envyos",
   "version": "0.1.3",
   "description": "node-envyos",
+  "keywords": ["node", "environment", "env", "process.env"],
   "main": "index.js",
   "author": {
     "name": "Eli Mumford",
