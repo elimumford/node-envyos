@@ -6,7 +6,9 @@
     "node",
     "environment",
     "env",
-    "process.env"
+    "process.env",
+    "variables",
+    "expansion"
   ],
   "main": "index.js",
   "author": {
