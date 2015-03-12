@@ -10,4 +10,4 @@ process.env = require('node-envyos');
 ## Notes
 
 ### Windows
-Because windows environment variables are not case sensative and the majority of other operating systems are and tend towards an upper case convention, the win32 processor forces all of the keys to capitalized versions in the replacement object
+Because windows environment variables are not case sensitive and the majority of other operating systems are and tend towards an upper case convention, the win32 processor forces all of the keys to capitalized versions in the replacement object
