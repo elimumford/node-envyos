@@ -5,8 +5,8 @@ Basic node.js process.env replacer that pre-expands environment variables inside
 # Example
 
 ```javascript
-process.env = require('node-envyos')
-
+process.env = require('node-envyos');
+```
 ## Notes
 
 ### Windows
